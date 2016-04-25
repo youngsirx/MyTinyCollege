@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My TinyCollege - @ViewBag.Title</title>
+    <title>My Tiny College - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -22,37 +22,27 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                   
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Students<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+                           role="button" aria-haspopup="true" aria-expanded="false">Students <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("Students", "Index", "Student")</li>
                             <li>@Html.ActionLink("Courses", "Index", "Course")</li>
-                          
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Faculty<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button" aria-haspopup="true" aria-expanded="false">Faculty<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                         
                             <li>@Html.ActionLink("Instructors", "Index", "Instructor")</li>
                             <li>@Html.ActionLink("Departments", "Index", "Department")</li>
                         </ul>
                     </li>
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Info<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
 
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </li>
-                  
-                    
-
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     @*<li>@Html.ActionLink("Test", "Test", "Home")</li>*@
-                   @*<li>@Html.ActionLink("Menu Name","Path with action result and view", " would be located in the Home folder")</li>*@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

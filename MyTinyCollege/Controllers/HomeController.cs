@@ -27,15 +27,12 @@ namespace MyTinyCollege.Controllers
             return View();
         }
 
-        //test
+        //Test
         public ActionResult Test()
         {
-
-            //return Content("<h1>This is just a test</h1>");
-
-            ViewBag.Message = "Test";
             return View();
-
+            //return Content("<h1>This is just a test</h1>");
         }
+
     }
 }
