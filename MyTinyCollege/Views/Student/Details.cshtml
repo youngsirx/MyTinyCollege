@@ -62,10 +62,16 @@
                             @if (String.IsNullOrEmpty(item.Grade.ToString()))
                             {
                                 //no grade - create add grade link
+                               // @:AddGrade
+                               <a href="@Url.Action("Edit","Enrollment",new { id = item.EnrollmentID })" title="Add Grade">Add Grade </a>
+                               <span class="glyphicon glyphicon-pencil"></span>
                             }
                             else
                             {
                                 //grade - create edit grade link
+                               // @:EditGrade
+                                <a href="@Url.Action("Edit","Enrollment",new { id = item.EnrollmentID })" title="Add Grade">EditGrade </a>
+                                <span class="glyphicon glyphicon-edit"></span>
                             }
                         </td>
 
