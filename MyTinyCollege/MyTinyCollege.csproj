@@ -170,17 +170,18 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251728015_InitialCreate1.cs" />
+    <Compile Include="Migrations\201604251728015_InitialCreate1.Designer.cs">
+      <DependentUpon>201604251728015_InitialCreate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CollegeMigrations\201604251416272_InitialCreate.cs" />
     <Compile Include="Migrations\CollegeMigrations\201604251416272_InitialCreate.Designer.cs">
       <DependentUpon>201604251416272_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\CollegeMigrations\201604251432142_FirstName.cs" />
-    <Compile Include="Migrations\CollegeMigrations\201604251432142_FirstName.Designer.cs">
-      <DependentUpon>201604251432142_FirstName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\CollegeMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -253,6 +254,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Student\Delete.cshtml" />
+    <Content Include="Views\Student\Details.cshtml" />
+    <Content Include="Views\Student\Edit.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -266,11 +272,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604251728015_InitialCreate1.resx">
+      <DependentUpon>201604251728015_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\CollegeMigrations\201604251416272_InitialCreate.resx">
       <DependentUpon>201604251416272_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\CollegeMigrations\201604251432142_FirstName.resx">
-      <DependentUpon>201604251432142_FirstName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
